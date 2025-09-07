@@ -1,0 +1,188 @@
+/* MAIN PAGE */
+body {
+    font-family: 'McLaren', serif;
+    color: #4D2F1D; 
+    background-color: #fafafa;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+  }
+
+  h1 a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  h1 a:hover {
+    text-decoration: underline;
+  }
+  
+  header h1 {
+    font-family: 'Kalnia', serif;
+    font-size: 35px;
+  }
+  
+  nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #4D2F1D;
+    font-weight: normal;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  main {
+    display: flex;
+    padding: 40px;
+    gap: 40px;
+  }
+  
+  /* Left column: images */
+  .images-column {
+    width: 187px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+  
+  .images-column img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 0px;
+  }
+  
+  /* Right column: about me */
+  .about-section {
+    font-family: 'McLaren', serif;
+    font-size: 16px;
+    flex-grow: 1;
+  }
+  
+  .about-section h2 {
+    font-family: 'Kalnia', serif;
+    font-size: 24px;
+  }
+
+  /* JULIA'S JOURNAL */
+
+  /*left-column with months*/
+  .container {
+    font-family: 'McLaren', serif;
+    display: flex;
+    font-size: 24px;
+    padding: 0 20px;
+    font-weight: normal;
+  }
+
+  .timeline {
+    font-family: 'McLaren', serif;
+    flex: 0.35;
+    font-size: 16px;
+    line-height: 2.2;
+    color: #4D2F1D;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .timeline .row {
+    display: flex;
+    align-items: center;
+  }
+
+  .timeline .month-button {
+    font-weight: normal; 
+    display: inline-block;
+    width: 50px;
+  }
+
+  .timeline .year {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  /*month buttons*/
+  .month-button {
+    color: #4D2F1D;
+    text-decoration: none;
+    font-weight: normal;
+  }
+
+  .month-button:hover {
+    text-decoration: underline;
+  }
+
+  /*what content*/
+  .content {
+    flex: 2;
+  }
+
+  .what-section h2 {
+    font-family: 'Kalnia', serif;
+    font-size: 24px;
+    margin-bottom: 0.5rem;
+  }
+
+  .what-section p {
+    font-family: 'McLaren', serif;
+    font-size: 16px;
+    margin-left: 0;
+  }
+
+  /*critics content*/
+  .critics-section {
+    margin-top: 50px;
+  }
+
+  .critics-section h2 {
+    font-family: 'Kalnia', serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  /* Each quote block */
+.critics-section blockquote {
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 650px;
+    margin-bottom: 15px;
+    margin-left: 0;
+    text-align: center;
+  }
+  
+  /* Stagger right aligned quotes */
+  .critics-section blockquote.right {
+    margin-left: auto;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 10px;
+    text-align: center;
+  }
+
+  /*UNDER CONSTRUCTION*/
+  .under-construction {
+    font-family: 'McLaren', serif;
+    font-size: 16px;
+  }
+
+  /*SIDE QUESTS*/
+  .sideq-content {
+    font-family: 'McLaren', serif;
+    font-size: 16px;
+    flex-grow: 1;
+  }
+
+
+
+  
