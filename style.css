@@ -254,6 +254,9 @@ body {
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
     -ms-overflow-style: none;
+    margin-top: 40px;
+    height: 450px;
+    padding: 40px 0;
   }
 
   .photo-strip-wrapper::-webkit-scrollbar {
@@ -287,6 +290,6 @@ body {
     scroll-snap-align: start;
     border-radius: 8px;
     object-fit: cover;
-    height: auto;
-    max-height: 220px;
+    height: 350px;
+    width: auto;
   }
