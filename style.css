@@ -170,6 +170,24 @@ body {
     text-align: center;
   }
 
+
+  
+  /*Make each quote block float in*/
+
+  .float-phrase {
+  display: block;
+  animation: floatIn 1.2s ease-out forwards;
+  animation-delay: var(--delay, 0s);
+  opacity: 0;
+  }
+
+  @keyframes floatIn {
+  0%   { opacity: 0; transform: translateY(28px); }
+  100% { opacity: 1; transform: translateY(0px); }
+  }
+
+
+
   /*UNDER CONSTRUCTION*/
   .under-construction {
     font-family: 'McLaren', serif;
@@ -181,8 +199,50 @@ body {
     font-family: 'McLaren', serif;
     font-size: 16px;
     flex-grow: 1;
+    overflow-x: hidden;
   }
 
+  .photo-strip-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    box-sizing: border-box;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
 
+  .photo-strip-wrapper::-webkit-scrollbar {
+    display: none;
+  }
 
-  
+  .photo-strip {
+    display: flex;
+    min-width: max-content;
+    gap: 16px;
+    padding: 16px 0;
+    scroll-snap-type: x mandatory;
+    box-sizing: border-box;
+  }
+
+  .photo-strip::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  .photo-strip::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .photo-strip::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+  }
+
+  .photo-strip img {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    border-radius: 8px;
+    object-fit: cover;
+    height: auto;
+    max-height: 220px;
+  }
